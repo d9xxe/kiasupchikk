@@ -1,147 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel=stylesheet href="css/style.css">
-    <script src="js/main.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Всем привет</h1>
-    <h1>❤️ Мы любим kiasuo ❤️</h1>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <form>
-        <div>
-         <label for="name">Имя Фамилия</label> 
-         <input type="text" name="hi" id="name" placeholder="Еремеев Банкиров Данилин">
-        </div>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/fvicon.png" type="image/x-icon">
 
-        <br>
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-        <div>
-            <label for="tex2">Ваш телефон</label>
-            <input type="tel" name="hi" id="tex2" placeholder="+7 (     ) - .. ..  ">
-        </div>
-           
+        <title>Kiasupchik</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    Kiasu<span>pchik</span>
+                </a>
 
-      <br>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link active-link">На главную</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">О нас</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Поддержка</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Контанты</a>
+                        </li>
+                    </ul>
 
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
 
+                    <img src="assets/img/nav-img.png" alt="Nav image" class="nav__img">
+                </div>
 
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </nav>
+        </header>
 
-        <div>
-            <label for="email">Почта</label>
-            <input type="email" name="hi" id="email" placeholder="example@email.com">
-        </div>
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home">
+                <div class="home__shape-small"></div>
+                <div class="home__shape-big"></div>
+                <img src="assets/img/shape-bg.png" alt="" class="home__shape-bg">
 
-        <br>
-
-        <div>
-            <label for="password">Пароль от вашего домофона</label>
-            <input type="password" name="hi" id="password">
-        </div>
-
-        <br>
-
-        <div>
-            <label for="passwordQ">Шкала вашего негатива 😠 </label>
-            <input type="number" name="hi" id="passwordQ" min="0" max="10" placeholder="0-10">
-        </div>
-
-        <br>
-
-
-        <div>
-            <label for="xxx">Шкала положительных эмоций</label>
-            <input type="range" name="hi" id="xxx" min="0" max="4" step="1">
-        </div>
-
-
-        <br>
-
-
-        <div>
-            <label for="passwordQ">Дата рождения</label>
-            <input type="date" name="hi" id="passwordQ" min="0" max="10">
-        </div>
-
-
-
-        <!--..>>>>>>>>......-->
-        <div>
-            <label for="passwordQ"></label
-            <input type="color" name="hi" id="passwordQ" min="0" max="10"
-        </div>
-
-        <br>
-
-  
-        
-
-
-        <div>
-            <label for="message">Сообщите нам вашу любовь к Kiasuo :</label>
-            <br>
-            <textarea id="message" cols="40" rows="20" placeholder="HIII">   
-              
-            </textarea>
-        </div>
-
-        <div>
-            <label for="пол">Ваш пол</label>
-            <select id="sex">
-                <option value="male">Мужчина</option>
-                <option value="female" selected>Женщина</option>
-                <option value="other">Вертолет</option>
-            </select>           
-        </div>
-
-        <br>
-
-        <!----or radio-------- radio кружки--->
-
-        <div>
-            <label>Количество негативных родителей из за сайта Kiasuo :</label>
-            <br>
-            <input type="checkbox" name="work"> 0
-            <input type="checkbox" name="work"> 2
-            <input type="checkbox" name="work"> 3
-            <input type="checkbox" name="work"> 4 
-            <input type="checkbox" name="work"> 5
-            <input type="checkbox" name="work"> 6
-
-
-        </div>
+                <div class="home__container container">
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Здравствуйте !
+                            <span>Светлана Генадьевна</span>
+                            Оценки уже ждут выставления !!!
+                        </h1>
+                        <p class="home__description">
+                            У вас 100 непрочитанных сообщений от 8А класса
+                        </p>
+                        <a href="marks.html" class="home__button">
+                            Продолжить
+                        </a>
+                    </div>
+    
+                    <div class="home__images">
+                        <img src="assets/img/liquid-fruit.png" alt="Liquid image" class="home__liquid">
+                            <img src="assets/img/leaf.png" alt="Leaf image" class="home__leaf">
+                            <img src="assets/img/leaf.png" alt="Leaf image" class="home__leaf">
+                            <img src="assets/img/leaf.png" alt="Leaf image" class="home__leaf">
+                            <img src="assets/img/leaf.png" alt="Leaf image" class="home__leaf">
+                            <img src="assets/img/leaf.png" alt="Leaf image" class="home__leaf">
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
 
-     <div>
+        </main>
 
-        <input type="submit" value="Отправить положительное письмо">
+        <!--=============== GSAP ===============-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 
-     </div>
-     <br>
-
-
-     <button><strong>Отправить негативное письмо</strong></button> 
-
-
-
-
-
-
-        
-
-        
-        
-     
-
-
-
-
-
-    </form>
-</body>
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
