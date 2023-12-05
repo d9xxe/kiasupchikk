@@ -1,59 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="assets/css/marks.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.componentator.com/spa.min@18.css" />
-    <script src="https://cdn.componentator.com/spa.min@18.js"></script>
-    <script src="jc.min.js"></script>
-    <title>marks</title>
-</head>
-<body>
-    <!-- <h1>История :</h1> -->
-    <!-- <table class="table__mark" border="1"> -->
-        <!-- <tr class="name"> -->
-        <!-- <th class="names">Имя</th> -->
-        <!-- <th class="date">21.11</th> -->
-        <!-- <th>22.11</th> -->
-        <!-- </tr> -->
-        <!-- <tr> -->
-        <!-- <td>Ячейка 3</td> -->
-        <!-- <td>Ячейка 4</td> -->
-        <!-- <td>Ячейка 5</td> -->
-    <!-- </table>  -->
-
-    
-    <div class='container'>
-        <div class='row'>
-          <div class='col-md-8 center-block' style='float:none'>                 <h2>Оценки по истории за сегодня :</h2><hr>        
-            <table class='table table-bordered mv20'>
-              <thead> 
-                <tr> 
-                  <th>#</th>
-                  <th style="width:350px;">Дата :</th>
-                  <th style="width: 650px;">Имя Фамилия</th>                      
-                  <th style='width:850px'>Добавить пометку для родителя</th>                       
-                  <th style="width: 90px;">Оценка</th>
-                  <th style="width: 100px;">Сохранить изменения</th>                       
-                </tr>
-              </thead>    
-              <tbody data-jc="repeater__datasource" >           
-                <script type="text/html">
-                  <tr data-index="$index">
-                    <td>{{index+1}}</td>
-                    <td>{{id}}</td>
-                    <td class='edit' data-type='textbox' data-field='firstname'>{{firstname}}</td>
-                    <td class='edit' data-type='textbox' data-field='lastname'>{{lastname}}</td>
-                    <td class='edit' data-type='dropdown' data-field='color_id' data-source='arr_colors'>{{color_id|select(arr_colors)}}</td>
-                    <td><button type='button' class='btn btn-danger btn-flat btn-xs' data-bind="rem__click:remRow"  data-id='$index' title='Удалить запись'><i class='fa fa-fw fa-remove'></i></button></td>        
-                  </tr>
-                </script> 
-              </tbody>  
-              <tfooter> 
-                <tr> 
-                    <tr> 
+<tr> 
                   <th></th>
                   <th><div data---="textbox__form.id__required:true;type:number;placeholder:00.00.23;class:form-control input-sm;"></div></th>
                   <th><div data---="textbox__form.firstname__required:true;placeholder:Имя Фамилия;class:form-control input-sm;"></div></th>
@@ -157,19 +102,3 @@
                   <th><div data---="dropdown__form.color_id__required:true;datasource:arr_colors;text:name;value:id;type:number;class:form-control input-sm;"></div></th>   
                   <th><button type='button' class='btn btn-primary btn-flat btn-xs' data-bind="rem__click:addRow"  data-id='$index' title='Добавить запись'><i class='fa fa-fw fa-plus'></i></button></th>                        
                 </tr>
-                  <th></th>
-                  <th><div data---="textbox__form.id__required:true;type:number;placeholder:00.00.23;class:form-control input-sm;"></div></th>
-                  <th><div data---="textbox__form.firstname__required:true;placeholder:Имя Фамилия;class:form-control input-sm;"></div></th>
-                  <th><div data---="textbox__form.lastname__required:true;placeholder:.....;class:form-control input-sm;"></div></th>   
-                  <th><div data---="dropdown__form.color_id__required:true;datasource:arr_colors;text:name;value:id;type:number;class:form-control input-sm;"></div></th>   
-                  <th><button type='button' class='btn btn-primary btn-flat btn-xs' data-bind="rem__click:addRow"  data-id='$index' title='Добавить запись'><i class='fa fa-fw fa-plus'></i></button></th>                        
-                </tr>
-              </tfooter>
-                  
-            </table>          
-          </div>
-        </div>
-      </div> 
-      
-</body>
-</html>
